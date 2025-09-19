@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website CV</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://fontawesome.com/icons/bars?f=classic&s=solid">
+</head>
+
+<body>
+
+    <!---------------------------------Section Header --------------------------------------------------------------------------------------------------->
+    <section id="header">
+        <div class="container text-center">
+            <div class="user-box">
+                <img src="images/user1.jpg" alt="User Image">
+                <h1>Uriel Mazcorro</h1>
+                <p>IT Engineer | Student UTSC</p>
+            </div>
+        </div>
+        <div class="scroll-btn">
+            <div class="scroll-bar">
+                <a href="#about"><span></span></a>
+            </div>
+        </div>
+    </section>
+
+    <!------------------------------------------------- Section Navbar ---------------------------------------------------------------------------->
+    <section id="user-info">
+        <div class="nav-bar">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                <div class="container">
+                    <a class="navbar-brand" href="#">
+
+                        <!-----------------------<img src="" alt="Logo">-------------------->
+
+                        ウリエル・マズコロ</a>
+
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fas fa-bars"></i> <!-- Icono corregido -->
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav ms-auto"> <!-- Alineación a la derecha -->
+                            <li class="nav-item">
+                                <a class="nav-link" href="#top">HOME</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#about">ABOUT ME</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#resume">RESUME</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#services">SERVICES</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#contact">CONTACT</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <!---------------------------------------------------------- ABOUT SECTION --------------------------------------------------------------->
+        <div class="about container" id="about">
+            <div class="row">
+                <div class="col-md-6 text-center">
+                    <img src="images/user2.jpg" class="profile-img" alt="Profile Image">
+                </div>
+                <div class="col-md-6">
+                    <h3>WHO AM I?</h3>
+                    <p>
+                        I am a musician who loves cars and cats, and I'm currently studying Software
+                        Development and Management Engineering. I'm creating this website with the intention
+                        of finding better opportunities to grow professionally and to help future beginner developers.
+                        Also, I value the importance of the present because I believe that what we do today defines
+                        tomorrow.
+                    </p>
+                    <p>Jeremiah 33:3</p>
+                    <div class="skills-bar">
+
+                        <p>Microsoft Office</p>
+                        <div class="progress">
+                            <div class="progress-bar" style="width: 75%;">75%</div>
+                        </div>
+
+                        <p>English</p>
+                        <div class="progress">
+                            <div class="progress-bar" style="width: 60%;">60%</div>
+                        </div>
+
+                        <p>Customers Services</p>
+                        <div class="progress">
+                            <div class="progress-bar" style="width: 80%;">80%</div>
+                        </div>
+
+                        <p>Basic management of Databases</p>
+                        <div class="progress">
+                            <div class="progress-bar" style="width: 70%;">70%</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!----------------------------------SOCIAL MEDIA-------------------------------------->
+
+        <div class="social-icons">
+            <ul>
+                <li><a href="#" aria-label="LinkedIn" class="social-link"
+                        data-url="https://www.linkedin.com/in/uriel-mazcorro-7aa35b2ba/"><i
+                            class="fa-brands fa-linkedin"></i></a></li>
+                <li><a href="#" aria-label="GitHub" class="social-link" data-url="https://www.github.com"><i
+                            class="fa-brands fa-github"></i></a></li>
+                <li><a href="#" aria-label="WhatsApp" class="social-link" data-url="https://wa.me/8112488966"><i
+                            class="fa-brands fa-whatsapp"></i></a></li>
+                <li><a href="#" aria-label="Instagram" class="social-link"
+                        data-url="https://www.instagram.com/uriel_mazcorro?igsh=dzV5NjU5aHE3dWh6"><i
+                            class="fa-brands fa-instagram"></i></a></li>
+                <li><a href="#" aria-label="Facebook" class="social-link"
+                        data-url="https://www.facebook.com/Uriel.Mazcorro"><i class="fa-brands fa-facebook"></i></a>
+                </li>
+            </ul>
+        </div>
+        <script>
+            document.querySelectorAll('.social-link').forEach(link => {
+                link.addEventListener('click', function (event) {
+                    event.preventDefault(); // Evita el comportamiento por defecto
+                    window.open(this.getAttribute('data-url'), '_blank'); // Abre la URL en una nueva pestaña
+                });
+            });
+        </script>
+
+
+        <!--------------------------------------------------------RESUME------------------------------------------------------------->
+        <div class="resume" id="resume">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <h3 class="text-center">My Experiences</h3>
+                        <ul class="timeline">
+                            <li>
+                                <h4><span>2024 -</span> TI ENGEENER</h4>
+                                <P>
+                                    <br>
+                                    <b>Company</b> - GreenClean<br>
+                                    <b>Duration</b> - Actually<br>
+                                    <b>Location</b> -San Pedro Garza Garcia, Nuevo Leon
+                                </P>
+                            </li>
+
+                            <li>
+                                <h4><span>2022 -</span>Tecnical Suport</h4>
+                                <P>
+                                    <br>
+                                    <b>Company</b> - Innova Sport<br>
+                                    <b>Duration</b> - May 2022 to April 2024]<br>
+                                    <b>Location</b> - San Pedro Garza Garcia, Nuevo Leon
+                                </P>
+                            </li>
+
+                            <li>
+                                <h4><span>2024 -</span>Warehouse Managert</h4>
+                                <P>
+                                    <br>
+                                    <b>Company</b> - Femsa<br>
+                                    <b>Duration</b> - June 2019 to May 2022 <br>
+                                    <b>Location</b> - Monterrey, Nuevo Leon
+                                </P>
+                            </li>
+
+
+                        </ul>
+                    </div>
+                    <div class="col-md-6">
+                        <h3 class="text-center">My Education</h3>
+                        <ul class="timeline">
+                            <li>
+                                <h4><span>2022 -</span>Engineering in Software Management and Development</h4>
+                                <P>
+                                    <br>
+                                    <b>Institute</b> - Universidad Tecnologica de Santa Catarinan<br>
+                                    <b>Session</b> - Actually<br>
+                                    <b>Location</b> - Santa Catarina, Nuevo Leon
+                                </P>
+                            </li>
+                            <li>
+                                <h4><span>2019 -</span> Technician in Information Technologies</h4>
+                                <P>
+                                    <br>
+                                    <b>Institute</b> -Tecnológico Castelfranco<br>
+                                    <b>Session</b> - 2019 to 2021<br>
+                                    <b>Location</b> - Monterrey Nuevo Leon
+                                </P>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!------------------------------------------------------------SERVICES--------------------------------------------------------->
+
+        <div class="services" id="services">
+            <div class="container">
+                <h1 class="text-center">My Offerd Services</h1>
+                <p class="text-center">ウリエル・マズコロl</p>
+
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="services-box">
+                            <i class="fa-solid fa-database"></i><span>Database</span>
+                            <p>I have a strong background in managing product catalogs and pricing, including
+                                promotions, with a focus on data integrity
+                                and accessibility. My experience with MySQL has allowed me to efficiently organize and
+                                retrieve information, ensuring accurate and up-to-date records
+
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="services-box">
+                            <i class="fa-solid fa-file"></i><span>Office Activities</span>
+                            <p>experience managing vendor relations, ensuring smooth
+                                communication and collaboration. I have successfully
+                                handled device enrollments, streamlining the onboarding process for new technology. </p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="services-box">
+                            <i class="fa-solid fa-circle-up"></i><span>Upgrades Software</span>
+                            <p> provided remote technical assistance, effectively troubleshooting
+                                issues and guiding users through solutions. Additionally, I have
+                                experience with hardware upgrades, ensuring seamless transitions and minimal downtime
+                                for end users.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!---------------------------------------------------------------Contact------------------------------------------------------------------------->
+        <div class="contact" id="contact">
+            <div class="container text-center">
+                <h1>Contact Me</h1>
+                <p class="text-center">ウリエル・マズコロ</p>
+
+                <div class="row">
+                    <div class="col-md-4">
+                        <i class="fa fa-phone"></i>
+                        <p>52+ 81 1248 8966</p>
+                    </div>
+                    <div class="col-md-4">
+                        <i class="fa fa-envelope"></i>
+                        <p>Uriel.alfosno115@gmail.com</p>
+                    </div>
+                    <div class="col-md-4">
+                        <i class="fa-brands fa-instagram"></i>
+                        <p>Uriel.Mazcorro</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!--------------------------SMOOTH SCROLL SCRIPT----------------------->
+    <script src="smooth-scroll.js"></script>
+
+    <script>
+        var scroll = new SmoothScroll('a[href*="#"]');
+    </script>
+       <!-- Script to Close Navbar on Link Click -->
+   <script>
+    // Selecciona todos los enlaces dentro de la navbar
+    const navLinks = document.querySelectorAll('.navbar-nav .nav-link');
+    const navbarCollapse = document.querySelector('#navbarNav');
+    navLinks.forEach((link) => {
+        link.addEventListener('click', () => {
+            // Verifica si la navbar está abierta
+            const isExpanded = navbarCollapse.classList.contains('show');
+            if (isExpanded) {
+                // Si está abierta, la cierra
+                new bootstrap.Collapse(navbarCollapse).hide();
+            }
+        });
+    });
+</script>
+
+</body>
+
+</html>
